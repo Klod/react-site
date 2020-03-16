@@ -5,11 +5,20 @@ const NavBar = props => {
   return (
     <Nav className="ml-auto" navbar>
       <NavItem>
-        <NavLink href="/components/">Components</NavLink>
+        <NavLink href="/components/">About</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="/components/">CV</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="/components/">Approach</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="/components/">Toolset</NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="https://github.com/reactstrap/reactstrap">
-          GitHub
+          Contact
         </NavLink>
       </NavItem>
     </Nav>
