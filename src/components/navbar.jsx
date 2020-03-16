@@ -3,12 +3,16 @@ import { Nav, NavItem, NavLink } from "reactstrap";
 
 const NavBar = props => {
   return (
-    <div>
-      <Nav>
-        <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink>{" "}
-        <NavLink href="#">Another Link</NavLink>{" "}
-      </Nav>
-    </div>
+    <Nav className="ml-auto" navbar>
+      <NavItem>
+        <NavLink href="/components/">Components</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink href="https://github.com/reactstrap/reactstrap">
+          GitHub
+        </NavLink>
+      </NavItem>
+    </Nav>
   );
 };
 

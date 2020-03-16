@@ -16,6 +16,13 @@ import {
 
 import NavBar from "./navbar";
 
+const Search = props => (
+  <div>
+    <i class="fa fa-search" aria-hidden="true"></i>
+  </div>
+);
+
+const Logo = props => <NavbarBrand href="/">KirillBylkov</NavbarBrand>;
 const Header = props => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,11 +31,11 @@ const Header = props => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">KirillBylkov</NavbarBrand>
+        <Logo />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <NavBar />
-          {/* <i class="fa fa-search" aria-hidden="true"></i> */}
+          <Search />
         </Collapse>
       </Navbar>
     </div>
