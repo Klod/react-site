@@ -2,6 +2,7 @@ import React from "react";
 import ReactTypingEffectDemo from "./components/reactTypingEffect";
 import "./App.css";
 import Header from "./components/header";
+import Signups from "./components/signups";
 
 const banner = (
   <div className="banner">
@@ -18,6 +19,7 @@ function App() {
       <Header />
       {banner}
       <ReactTypingEffectDemo />
+      <Signups />
     </div>
   );
 }
