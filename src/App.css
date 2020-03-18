@@ -17,19 +17,20 @@
   bottom: 50px;
   font-size: x-large;
 }
-.signup-offer {
-  display: flex;
+
+/* Signup form Section  */
+
+.about {
+  padding: 15px 0;
+}
+.about-left {
+  text-align: center;
 }
 .form-border {
-  width: fit-content;
-  border: 1.5px solid #d8d8d8;
-}
-
-.login-form {
-  width: 100%;
-  max-width: 330px;
-}
-
-.form-label {
-  padding-right: 10em;
+  /* width: fit-content; */
+  text-align: center;
+  padding: 15px;
+  background-color: #35424a;
+  color: white;
+  /* border: 1.5px solid #d8d8d8; */
 }
