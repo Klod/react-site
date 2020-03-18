@@ -17,8 +17,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {banner}
       <ReactTypingEffectDemo />
+      {banner}
       <Signups />
     </div>
   );

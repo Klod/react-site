@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import {
+  Container,
+  Col,
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Row
+} from "reactstrap";
 
 class Signups extends Component {
   constructor(props) {
@@ -36,25 +45,27 @@ class Signups extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <div className="signup-offer">
-          <div>
-            <h2>Risk Free Offer!</h2>
-            <h1>
-              Looking for professional help to shape your growth ideas into a
-              step-by-step guide? Sign up now!
-            </h1>
-            <div>
-              Upon completion of the audit you will receive a customized media
-              brief based on your specific expectations for the campaign.
+      <Container className="about">
+        <Row>
+          <Col md={8}>
+            <div className="about-left">
+              <h2>Risk Free Offer!</h2>
+              <h2>
+                Looking for professional help to shape your growth ideas into a
+                step-by-step guide? Sign up now!
+              </h2>
+              <div>
+                Upon completion of the audit you will receive a customized media
+                brief based on your specific expectations for the campaign.
+              </div>
             </div>
-          </div>
-          <div className="form-border">
-            <Form onSubmit={this.handleSubmit}>
-              <div className="login-form">
+          </Col>
+          <Col md={4}>
+            <div>
+              <Form onSubmit={this.handleSubmit} className="form-border">
                 <FormGroup>
-                  <label className="form-label">Name</label>
-                  <input
+                  <Label className="form-Label">Name</Label>
+                  <Input
                     type="text"
                     placeholder="Full Name"
                     value={this.state.name}
@@ -62,8 +73,8 @@ class Signups extends Component {
                   />
                 </FormGroup>
                 <FormGroup>
-                  <label className="form-label">Email</label>
-                  <input
+                  <Label className="form-Label">Email</Label>
+                  <Input
                     type="email"
                     placeholder="Email"
                     value={this.state.email}
@@ -71,22 +82,22 @@ class Signups extends Component {
                   />
                 </FormGroup>
                 <FormGroup>
-                  <label className="form-label">Company</label>
-                  <input
+                  <Label className="form-Label">Company</Label>
+                  <Input
                     type="text"
                     placeholder="Company Name"
                     value={this.state.company}
                     onChange={this.handleCompanyChange}
                   />
                 </FormGroup>
-                <button className="btn-sm btn-dark btn-block" type="submit">
+                <Button size="sm" block color="primary">
                   Sign Up
-                </button>
-              </div>
-            </Form>
-          </div>
-        </div>
-      </React.Fragment>
+                </Button>
+              </Form>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
