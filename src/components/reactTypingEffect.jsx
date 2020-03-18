@@ -3,15 +3,15 @@ import ReactTypingEffect from "react-typing-effect";
 
 const ReactTypingEffectDemo = () => {
   return (
-    <div>
+    <div className="type-anim">
       <ReactTypingEffect
         text={[
           "Acquistion strategist",
           "Campaign executioner",
           "Semi-technical marketing lead"
         ]}
-        speed={150}
-        eraseDelay={500}
+        speed={100}
+        eraseDelay={450}
       />
     </div>
   );
