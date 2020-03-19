@@ -11,3 +11,26 @@
   left: 20px;
   bottom: 80px;
 }
+.type-anim {
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  font-size: x-large;
+}
+
+/* Signup form Section  */
+
+.about {
+  padding: 15px 0;
+}
+.about-left {
+  text-align: center;
+}
+.form-border {
+  /* width: fit-content; */
+  text-align: center;
+  padding: 15px;
+  background-color: #35424a;
+  color: white;
+  /* border: 1.5px solid #d8d8d8; */
+}
